@@ -1,7 +1,7 @@
 use actix_web::{App, HttpServer};
 mod routes;
 
-#[actix_rt::man]
+#[actix_rt::main]
 async fn main() -> std::io::Result<()> {
     HttpServer::new(|| {
         App::new().service(routes::index)
